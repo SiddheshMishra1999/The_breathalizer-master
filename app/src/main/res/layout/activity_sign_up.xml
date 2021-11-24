@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="Authentication.SignUpActivity"
+    android:background="@drawable/the_breathalizer_background"
+    >
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Breathalizer"
+            android:background="#6B800909"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="#6B800909"
+            android:text="Sign up"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <ProgressBar
+        android:id="@+id/SignUpProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--    Email-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpEmailEditText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpUsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:paddingTop="5dp"
+        app:errorEnabled="true"
+        app:counterTextColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:maxLength="20"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5sp"
+        app:counterTextColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- Confirm Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpConfirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:passwordToggleEnabled="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5sp"
+        app:counterTextColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/ContinueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Continue"
+        />
+    <!--        android:onClick="continue_Button"-->
+
+</LinearLayout>

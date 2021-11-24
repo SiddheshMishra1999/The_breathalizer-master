@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/drawable/ic__90_logo_recovered.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/drawable/newreadingbutton.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/drawable/splash_image.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_forgot_password.xml" value="0.3020833333333333" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_login.xml" value="0.32037037037037036" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_main.xml" value="0.32037037037037036" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_sign_up.xml" value="0.32037037037037036" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_user_info.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/activity_verification.xml" value="0.26403985507246375" />
+        <entry key="..\:/Users/Siddh/AndroidStudioProjects/Thebreathalizer/app/src/main/res/layout/login_activity.xml" value="0.32037037037037036" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/drawable/ic__90_logo_update_1.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/drawable/ic__90_logo_version2.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/drawable/ic__90_logo_version4.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/drawable/ic__90_logo_version5.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_analyze.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_blower_acftivity.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_caller.xml" value="0.1" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_connection.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_contact_list.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_forgot_password.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_guest_analyze.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_guest_user.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_home.xml" value="0.2572463768115942" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_login.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_profile.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_sign_up.xml" value="0.15881458966565348" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_update_info.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/activity_user_info.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/contact_item.xml" value="0.25" />
+        <entry key="..\:/Users/Siddh/Documents/Concordia/7th Semester Fall 2021/COEN 390/Project/Git hub/The_breathalizer/app/src/main/res/layout/list_of_devices.xml" value="0.3265625" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/activity_analyze.xml" value="0.353713768115942" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/activity_blower_acftivity.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/activity_connection.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/activity_contact_list.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/activity_sensor_data_display.xml" value="0.353713768115942" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/contact_item.xml" value="0.3625" />
+        <entry key="..\:/Users/Siddh/Dropbox/PC/Downloads/The_breathalizer-master/The_breathalizer-master/app/src/main/res/layout/sensor_data.xml" value="0.3625" />
+        <entry key="app/src/main/res/drawable/ic__90_logo_recovered.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/drawable/ic__90_logo_update_1.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.18840579710144928" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1852355072463768" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16983695652173914" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1852355072463768" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.1852355072463768" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.16983695652173914" />
+        <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.2210144927536232" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

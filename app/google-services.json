@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "711409433205",
+    "project_id": "the-breathalizer",
+    "storage_bucket": "the-breathalizer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711409433205:android:ed6e75610ccb1a5ed8963c",
+        "android_client_info": {
+          "package_name": "com.example.thebreathalizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711409433205-k1p2auulhm699goaj1e50nk1uau4d3s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVtLeqloFIwhI8zcUMCSCR89sMXq9q6zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711409433205-k1p2auulhm699goaj1e50nk1uau4d3s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

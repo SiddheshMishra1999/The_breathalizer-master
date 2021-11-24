@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Authentication.LoginActivity"
+    android:background="@drawable/the_breathalizer_background"
+    >
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LogInTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#6B800909"
+            android:text="The Breathalizer"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LogInTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6B800909"
+            android:gravity="center"
+            android:text="Log In"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--    Email-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LoginEmailEditText"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LogInPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:counterEnabled="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5sp"
+        app:counterTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/LogInButton"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Log In "
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/ForgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#6B800909"
+        android:text="Forgot Password?"
+        android:textColor="@color/white" />
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NewUserTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6B800909"
+            android:gravity="center"
+            android:text="New User?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/SignUpRedirectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#6B800909"
+        android:text="Sign Up"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/GuestUserTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:gravity="center"
+        android:text="Quick use?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/GuestUserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#6B800909"
+        android:text="Use as Guest"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white" />
+
+
+
+
+</LinearLayout>

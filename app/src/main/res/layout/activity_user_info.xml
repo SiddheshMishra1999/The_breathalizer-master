@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Authentication.UserInfoActivity"
+    android:background="@drawable/the_breathalizer_background"
+    >
+
+    <!-- email Text View -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:inputType="text"
+
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck" />
+    <!-- DOB Text View -->
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        android:hint="Username "
+        android:inputType="text"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck" />
+    <!-- DOB Text View -->
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:background="#6B800909"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- First Name Edit Text -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FirstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="text"
+            android:maxLength="40"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Last Name Edit Text -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:maxLength="40"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/ProvinceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:textColorHint="@color/white"
+
+        android:minHeight="48dp"
+
+        />
+    <!-- Min Age Text View -->
+    <TextView
+        android:id="@+id/MinAgeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minimum Age "
+        android:inputType="date"
+        android:background="#6B800909"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+
+    <!-- DOB Text View -->
+    <TextView
+        android:id="@+id/dobTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:textColorHint="@color/white"
+
+        android:hint="Set Date of Birth: "
+        android:inputType="date"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- DOB Button-->
+    <Button
+        android:id="@+id/DobButton"
+        style="?android:spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:onClick="openCalandarDateSet"
+        android:text="Choose a date"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        />
+    <!-- Age Text View -->
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age "
+        android:inputType="date"
+        android:background="#6B800909"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+
+    <Spinner
+        android:id="@+id/Licensepinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+
+        android:contentDescription="License"
+        android:background="@color/white"
+
+
+        />
+
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="390dp"
+        android:background="#6B800909"
+
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>

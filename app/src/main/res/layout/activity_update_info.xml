@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="DatabaseHelper.UpdateInfoActivity"
+    android:background="@drawable/the_breathalizer_background"
+    >
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Breathalizer"
+            android:background="#6B800909"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Text Views -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SignUpTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="#6B800909"
+            android:text="Update Profile"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--    Username -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UsernameUpdateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:paddingTop="5dp"
+        app:errorEnabled="true"
+        app:counterTextColor="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:maxLength="20"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- First Name Edit Text -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/FirstNameUpdateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:inputType="text"
+            android:maxLength="40"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Last Name Edit Text -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LastNameUpdateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:maxLength="40"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ- "
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/ProvinceUpdateSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFF"
+        android:textColorHint="@color/white"
+
+        android:minHeight="48dp"
+
+        />
+    <!-- Min Age Text View -->
+    <TextView
+        android:id="@+id/MinAgeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Minimum Age "
+        android:inputType="date"
+        android:background="#6B800909"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+
+    <!-- DOB Text View -->
+    <TextView
+        android:id="@+id/dobTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:textColorHint="@color/white"
+
+        android:hint="Set Date of Birth: "
+        android:inputType="date"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- DOB Button-->
+    <Button
+        android:id="@+id/DobUpdateButton"
+        style="?android:spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6B800909"
+        android:onClick="openCalandarDateSetUpdate"
+        android:text="Choose a date"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        />
+    <!-- Age Text View -->
+    <TextView
+        android:id="@+id/ageUpdateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age "
+        android:inputType="date"
+        android:background="#6B800909"
+        android:minHeight="20dp"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        tools:ignore="TouchTargetSizeCheck"
+        android:enabled="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        />
+
+
+    <Spinner
+        android:id="@+id/LicenseUpdatepinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+
+        android:contentDescription="License"
+        android:background="@color/white"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/UpdateButton"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="5dp"
+        android:background="#800909"
+        android:text="Update" />
+
+
+</LinearLayout>
