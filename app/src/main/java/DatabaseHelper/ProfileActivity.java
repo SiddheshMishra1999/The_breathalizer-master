@@ -97,6 +97,7 @@ public class ProfileActivity extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
         userID = mUser.getUid();
 
+        //testing
         databaseReference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
