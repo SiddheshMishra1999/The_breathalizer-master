@@ -34,12 +34,15 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 
 import Authentication.LoginActivity;
+import Bluetooth_Connection.ConnectionActivity;
 
 
 public class ContactListActivity extends AppCompatActivity {
 
     private Button     ExitBlower;
     private FirebaseAuth mFirebaseAuth;
+
+    private Button ExitButton;
 
 
     private RecyclerView ContactRecyclerView;
@@ -54,12 +57,29 @@ public class ContactListActivity extends AppCompatActivity {
         ContactRecyclerView = findViewById(R.id.ContactRecyclerView);
         ExitBlower = findViewById(R.id.ExitBlower);
         mFirebaseAuth = FirebaseAuth.getInstance();
+        ExitButton = findViewById(R.id.ExitButton);
 
 
         checkPermission();
         backToHome();
+        exitApp();
 
 
+    }
+    private void exitApp() {
+        ExitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ContactListActivity.this, ConnectionActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                finish();
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
+            }
+        });
     }
 
     private void backToHome() {

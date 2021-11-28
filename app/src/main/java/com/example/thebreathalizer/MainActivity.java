@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 //       ViewProfileButton = findViewById(R.id.ViewProfileButton);
         onStart();
 //        goToProfile();
+
+
     }
 
     @Override

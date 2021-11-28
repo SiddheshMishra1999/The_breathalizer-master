@@ -22,6 +22,7 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
     private TextView ValueGuestTextView;
     private TextView SuggestionTextView;
     private  TextView LevelPermittedTextView;
+    private Button ExitButton;
 
     private Vibrator vibrator;
     @Override
@@ -35,6 +36,7 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
         SuggestionTextView = findViewById(R.id.SuggestionTextView);
         LevelPermittedTextView = findViewById(R.id.LevelPermittedTextView);
         ContactButton = findViewById(R.id.ContactButton);
+        ExitButton = findViewById(R.id.ExitButton);
 
 
         goToLogin();
@@ -43,8 +45,24 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
 
         testAgain();
         checkInfo();
+        exitApp();
 
 
+    }
+    private void exitApp() {
+        ExitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GuestAnalyzeActivity.this, ConnectionActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                finish();
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
+            }
+        });
     }
 
     private void goToContact() {
@@ -82,6 +100,7 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
         if(value <= 300){
             SuggestionTextView.setText("You are not over the limit, Drive Safely!");
             goToLoginGuestButton.setVisibility(View.VISIBLE);
+            ExitButton.setVisibility(View.VISIBLE);
 
         }else if(value> 300 && value <= 400 ){
             SuggestionTextView.setText("You are close to the limit, Driving is not recommended!");

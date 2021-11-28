@@ -40,11 +40,11 @@
         android:id="@+id/ViewProfileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="156dp"
         android:text="View Profile"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,7 +52,7 @@
         android:id="@+id/UpdateProfileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="224dp"
         android:text="Update Profile"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,34 +63,29 @@
         android:id="@+id/BlowUserButton"
         android:layout_width="217dp"
         android:layout_height="240dp"
-        android:layout_marginStart="97dp"
         android:layout_marginTop="104dp"
-        android:layout_marginEnd="97dp"
+        android:layout_marginEnd="68dp"
         android:background="#00FFFFFF"
-        android:textAlignment="inherit"
         android:foregroundGravity="center"
+        android:textAlignment="inherit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685"
+        app:layout_constraintVertical_bias="0.739"
         app:srcCompat="@drawable/img" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
         android:text="Press to Blow!"
         android:textColor="@color/white"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BlowUserButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/BlowUserButton"
+        app:layout_constraintStart_toStartOf="@+id/BlowUserButton"
+        app:layout_constraintTop_toTopOf="@+id/BlowUserButton"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

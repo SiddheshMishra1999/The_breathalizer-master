@@ -41,6 +41,7 @@ public class AnalyzeActivity extends AppCompatActivity {
     private TextView LevelPermittedTextView;
     private TextView SuggestionTextView;
     private Button backToHomeButton;
+    private Button ExitButton;
 
     private FirebaseUser mUser;
     private DatabaseReference databaseReference, databaseReference2;
@@ -62,6 +63,7 @@ public class AnalyzeActivity extends AppCompatActivity {
         TesAgainButton = findViewById(R.id.TesAgainButton);
         ContactButton = findViewById(R.id.ContactButton);
         backToHomeButton = findViewById(R.id.backToHomeButton);
+        ExitButton = findViewById(R.id.ExitButton);
 
         ValueTextView = findViewById(R.id.ValueTextView);
         UserNameTextView = findViewById(R.id.UserNameTextView);
@@ -86,9 +88,27 @@ public class AnalyzeActivity extends AppCompatActivity {
 
         goToContact();
 
+        exitApp();
 
 
 
+
+    }
+
+    private void exitApp() {
+        ExitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AnalyzeActivity.this, ConnectionActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("EXIT", true);
+                startActivity(intent);
+                finish();
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
+            }
+        });
     }
 
     private void goToHome() {
@@ -195,6 +215,7 @@ public class AnalyzeActivity extends AppCompatActivity {
                             if (value <= 300) {
                                 SuggestionTextView.setText("You are not over the limit, Drive Safely!");
                                 backToHomeButton.setVisibility(View.VISIBLE);
+                                ExitButton.setVisibility(View.VISIBLE);
 
 
                             } else if (value > 300 && value <= 400) {

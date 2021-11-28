@@ -71,6 +71,9 @@ public class ConnectionActivity extends AppCompatActivity {
         DevicesListView = findViewById(R.id.DevicesListView);
         ConnectDeviceButton = findViewById(R.id.ConnectDeviceButton);
         ListOfContentTextView = findViewById(R.id.ListOfContentTextView);
+        if(getIntent().getBooleanExtra("EXIT", false)){
+            finish();
+        }
 
         if (savedInstanceState != null) {
             ArrayList<BluetoothDevice> list = savedInstanceState.getParcelableArrayList(DEVICE_LIST);
