@@ -111,19 +111,6 @@ public class UserInfoActivity extends AppCompatActivity  {
         usernameTextView.setText(username);
         passwordTextView.setText(password);
 
-//        AdapterView.OnItemSelectedListener itemSelectedListener = new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-//                AgeCheck();
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//
-//            }
-//        };
-//        ProvinceSpinner.setOnItemSelectedListener(itemSelectedListener);
-
 
 
     }
@@ -158,10 +145,6 @@ public class UserInfoActivity extends AppCompatActivity  {
 
                 // Calculating Age
                 int age = yearT - year;
-
-//                if (dayT < day) {
-//                    age--;
-//                }
                 Integer ageInt = new Integer(age);
                 String age_string = ageInt.toString();
 
@@ -336,13 +319,6 @@ public class UserInfoActivity extends AppCompatActivity  {
                             }
                         });
 
-
-
-//
-//                // Redirecting to the login activity
-//
-//                Intent intent = new Intent(UserInfoActivity.this, LoginActivity.class);
-//                startActivity(intent);
             }
         });
 

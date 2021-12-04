@@ -67,12 +67,13 @@ public class SensorDataDisplayActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.SensorRV);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
+        // new list that holds all the data
         list = new ArrayList<>();
         adapter = new MySensorAdapter(this,list);
 
         recyclerView.setAdapter(adapter);
 
+        // get the sensor data from the database
         root.addValueEventListener(new ValueEventListener() {
 
             @Override

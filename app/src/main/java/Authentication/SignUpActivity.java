@@ -107,6 +107,8 @@ public class SignUpActivity extends AppCompatActivity {
             return true;
         }
     }
+
+    // Verifying if the password is the same as entered previously
     private boolean validConfirmPassword(){
         String passwordInput = SignUpPasswordEditText.getEditText().getText().toString().trim();
         String confirmPasswordInput = SignUpConfirmPasswordEditText.getEditText().getText().toString().trim();
@@ -127,6 +129,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
+    // Redirect to the next step of the signup
     public void continue_Button(){
 
         ContinueButton.setOnClickListener(new View.OnClickListener() {

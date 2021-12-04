@@ -38,17 +38,29 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
         ContactButton = findViewById(R.id.ContactButton);
         ExitButton = findViewById(R.id.ExitButton);
 
-
+        // Redirect to Login activity
         goToLogin();
+
+        // Redirect to contact list activity
 
         goToContact();
 
+        // Redirect to search device activity
+
         testAgain();
+
+        // Compare default vs new value and give output
+
         checkInfo();
+
+        // Close app
+
         exitApp();
 
 
     }
+
+    // Close app method
     private void exitApp() {
         ExitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +77,8 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
         });
     }
 
+    // Redirect to contact list activity
+
     private void goToContact() {
         ContactButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +90,8 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
 
     }
 
+    // Redirect to search device activity
+
     private void testAgain() {
         TesAgainGuestButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,6 +101,8 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
             }
         });
     }
+
+    // Compare default vs new value and give output
 
     private void checkInfo() {
         Bundle bundle = getIntent().getExtras();
@@ -129,12 +147,16 @@ public class GuestAnalyzeActivity extends AppCompatActivity {
 
         }
     }
+
+    // Vibrator function
     private void shakeItBaby() {
         vibrator =  (Vibrator)getSystemService(VIBRATOR_SERVICE);
         vibrator.vibrate(10000);
 
     }
 
+
+    // Redirect to Login activity
 
     private void goToLogin() {
         goToLoginGuestButton.setOnClickListener(new View.OnClickListener() {

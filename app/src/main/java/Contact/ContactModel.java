@@ -2,6 +2,7 @@ package Contact;
 
 public class ContactModel {
 
+    // The information needed for the contact list
     String Name, Number;
 
     public String getName() {

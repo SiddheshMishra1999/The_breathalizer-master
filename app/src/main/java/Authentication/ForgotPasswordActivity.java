@@ -34,12 +34,12 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mAuth = FirebaseAuth.getInstance();
-
+        // getting current user
         mUser = FirebaseAuth.getInstance().getCurrentUser();
 
         ForgotPasswordEmailEditText = findViewById(R.id.ForgotPasswordEmailEditText);
         GetPasswordButton = findViewById(R.id.GetPasswordButton);
-
+        // sends an email to the user's email and brings back to the login
         Get_Password();
 
 

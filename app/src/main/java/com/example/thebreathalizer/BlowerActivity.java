@@ -64,7 +64,7 @@ public class BlowerActivity extends AppCompatActivity {
 
         mFirebaseAuth = FirebaseAuth.getInstance();
 
-
+        // getting intent from the Connection activity
         Intent intent = getIntent();
         Bundle b = intent.getExtras();
         myDevice = b.getParcelable("Bluetooth_Connection.SOCKET");
@@ -87,7 +87,7 @@ public class BlowerActivity extends AppCompatActivity {
 
         private boolean bluetoothStop = false;
         private Thread thread;
-
+        // start the threads
         public ReadInput() {
             thread = new Thread(this, "Input Thread");
             thread.start();
@@ -98,6 +98,7 @@ public class BlowerActivity extends AppCompatActivity {
         }
 
         @Override
+        // runs thread
         public void run() {
             InputStream inputStream;
 
@@ -150,7 +151,7 @@ public class BlowerActivity extends AppCompatActivity {
         }
 
     }
-
+    // Get the average value being sent by the arduino
     private void GetValue(String strInput) {
         String prefix = "Average Value: ";
         String noPrefix = strInput.substring(strInput.indexOf(prefix)+prefix.length());
@@ -163,6 +164,7 @@ public class BlowerActivity extends AppCompatActivity {
         NetworkInfo wifiConnection = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
         NetworkInfo mobileConnection = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 
+        // if user is online, send him to a specific activity
         if((wifiConnection!= null && wifiConnection.isConnected()) || (mobileConnection != null && mobileConnection.isConnected())) {
 
             FirebaseUser mUser = mFirebaseAuth.getCurrentUser();

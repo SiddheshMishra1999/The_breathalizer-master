@@ -59,9 +59,13 @@ public class ContactListActivity extends AppCompatActivity {
         mFirebaseAuth = FirebaseAuth.getInstance();
         ExitButton = findViewById(R.id.ExitButton);
 
-
+        // Make sure user has given permission
         checkPermission();
+
+        // Redirect back to home activity
         backToHome();
+
+        // close app
         exitApp();
 
 
@@ -82,6 +86,7 @@ public class ContactListActivity extends AppCompatActivity {
         });
     }
 
+    // Check if user is online and send them to the right activity accordingly
     private void backToHome() {
         ExitBlower.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,6 +125,7 @@ public class ContactListActivity extends AppCompatActivity {
 
     }
 
+    // Prompt the user to give permission
     private void checkPermission() {
         if(ContextCompat.checkSelfPermission(ContactListActivity.this, Manifest.permission.READ_CONTACTS)
                 != PackageManager.PERMISSION_GRANTED){
@@ -130,6 +136,7 @@ public class ContactListActivity extends AppCompatActivity {
         }
     }
 
+    // Fetch user's contact list
     private void getContactList() {
         Uri uri = ContactsContract.Contacts.CONTENT_URI;
 

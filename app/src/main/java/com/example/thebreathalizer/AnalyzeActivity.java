@@ -48,7 +48,7 @@ public class AnalyzeActivity extends AppCompatActivity {
     private String userID;
     private FirebaseAuth mAuth;
 
-
+    // Vibrator function
     Vibrator vibrator;
 
     public int counter = 0;
@@ -79,21 +79,30 @@ public class AnalyzeActivity extends AppCompatActivity {
 
 
 
+        // Redirects to search device activity
         goToTestAgain();
+
+        // Redirects to home activity
 
         goToHome();
 
 
+        // Fetches data from database
+
         GetInfo();
+
+        // Redirects to contact list activity
 
         goToContact();
 
+        // Closes app
         exitApp();
 
 
 
 
     }
+    // Closes app
 
     private void exitApp() {
         ExitButton.setOnClickListener(new View.OnClickListener() {
@@ -111,6 +120,8 @@ public class AnalyzeActivity extends AppCompatActivity {
         });
     }
 
+    // Redirects to home activity
+
     private void goToHome() {
         backToHomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,6 +132,8 @@ public class AnalyzeActivity extends AppCompatActivity {
             }
         });
     }
+
+    // Redirects to contact list activity
 
     private void goToContact() {
         ContactButton.setOnClickListener(new View.OnClickListener() {
@@ -133,6 +146,7 @@ public class AnalyzeActivity extends AppCompatActivity {
         });
     }
 
+    // Fetches data from database
     public void GetInfo(){
         Bundle bundle = getIntent().getExtras();
         String Value = bundle.getString("Value").trim();
@@ -173,26 +187,7 @@ public class AnalyzeActivity extends AppCompatActivity {
                     databaseReference2.push().setValue(valuemap);
 
 
-//
-//
-//                    Sensor sensor = new Sensor(Value, date2);
-//                    Map<String,Object> map2 = new HashMap<>();
-//                    Map<String,Object> map3 = new HashMap<>();
-//                    String key = databaseReference.child("data").child(userID).push().getKey();
-//                    String key2 = databaseReference.child("data").child(userID).push().getKey();
-//
-//
-//
-//                    map2.put("Value", Value);
-//                    map3.put("Date", date2);
-//                    FirebaseDatabase.getInstance().getReference("data")
-//                            .child(userID).updateChildren(map2);
-//                    FirebaseDatabase.getInstance().getReference("data")
-//                            .child(userID).updateChildren(map3);
-
-
                     // Add data in the firebase database
-//                    String key = databaseReference.child(userID).child("Data").push().getKey();
                     Map<String, Object> map = new HashMap<>();
                     map.put(date2, Value);
                     databaseReference.child(userID).child("Data").updateChildren(map);
@@ -203,7 +198,7 @@ public class AnalyzeActivity extends AppCompatActivity {
                         UserNameTextView.setText(Name + "'s Alcohol Level Analysis");
                         String ProvinceSelected = userProfile.province;
 
-
+                        // Checks the license type and gives output accordingly
                         String License_type = userProfile.license;
                         if (License_type.equals("Probationary")) {
                             LevelPermittedTextView.setText("0, You cannot drink and dr ive");
@@ -259,14 +254,14 @@ public class AnalyzeActivity extends AppCompatActivity {
 
     }
 
-
+    // Vibration of the app for 10 secs
     private void shakeItBaby() {
         vibrator =  (Vibrator)getSystemService(VIBRATOR_SERVICE);
         vibrator.vibrate(10000);
 
     }
 
-
+    // redirects to Search device activity
     private void goToTestAgain() {
 
         TesAgainButton.setOnClickListener(new View.OnClickListener() {

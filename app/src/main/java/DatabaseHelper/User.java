@@ -3,6 +3,8 @@ package DatabaseHelper;
 import java.util.ArrayList;
 
 public class User {
+
+    // Parameters required for each new user
     public String email, username, first_name, last_name, age, province ,license, values;
 
 

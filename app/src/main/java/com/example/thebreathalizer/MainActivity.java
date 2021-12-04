@@ -26,9 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash); // changed this from activity_main to activity_splash
-//       ViewProfileButton = findViewById(R.id.ViewProfileButton);
         onStart();
-//        goToProfile();
 
 
     }
@@ -45,47 +43,5 @@ public class MainActivity extends AppCompatActivity {
         }, 3000);
     }
 
-//    public void goToProfile(){
-//        ViewProfileButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//    }
 
-
-
-
-
-//    // Skip main activity and go to Login Activity if the user is not logged in
-//
-//    FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
-//        @Override
-//        public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//            FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-//            if (firebaseUser == null) {
-//                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-//                startActivity(intent);
-//            }
-//        }
-//    };
-//
-//
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        firebaseAuth.addAuthStateListener(authStateListener);
-//
-//
-//    }
-//
-//    // removing the listener
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//        firebaseAuth.removeAuthStateListener(authStateListener);
-//    }
 }

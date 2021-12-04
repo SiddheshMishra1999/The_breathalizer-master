@@ -75,6 +75,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
 
+    // sign out current logged in user and redirect to login activity
     public void LogOut(){
         LogOutButton.setOnClickListener(new View.OnClickListener() {
             @Override

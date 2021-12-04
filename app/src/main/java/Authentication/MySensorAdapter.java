@@ -19,7 +19,7 @@ public class MySensorAdapter  extends RecyclerView.Adapter<MySensorAdapter.myVie
 
     ArrayList<Sensor> sensors;
     Context context;
-
+    // Constructor
     public MySensorAdapter(Context context, ArrayList<Sensor>sensors){
         this.sensors = sensors;
         this.context = context;

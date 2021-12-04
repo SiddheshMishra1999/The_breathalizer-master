@@ -112,6 +112,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
+    // Fetch name from databse
     public void WelcomeUser(){
         mUser = FirebaseAuth.getInstance().getCurrentUser();
         databaseReference = FirebaseDatabase.getInstance().getReference("users");

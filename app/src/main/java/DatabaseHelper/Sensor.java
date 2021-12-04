@@ -2,6 +2,8 @@ package DatabaseHelper;
 
 public class Sensor {
 
+
+    // parameters for the sensor usage data activity
     public String value, time;
 
 

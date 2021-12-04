@@ -47,7 +47,7 @@ public class UpdateInfoActivity extends AppCompatActivity {
     private TextView ageUpdateTextView;
     private TextView MinAgeTextView;
 
-    DatabaseReference databaseReference;;
+    DatabaseReference databaseReference;
 
 
 
@@ -157,6 +157,7 @@ public class UpdateInfoActivity extends AppCompatActivity {
 
 
 
+    // Update the info in the database and redirect to the profile activity
     public void UpdateInfoButton(){
         UpdateButton.setOnClickListener(new View.OnClickListener() {
             @Override

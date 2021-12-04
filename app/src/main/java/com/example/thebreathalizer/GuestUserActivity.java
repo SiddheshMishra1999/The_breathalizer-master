@@ -41,6 +41,8 @@ public class GuestUserActivity extends AppCompatActivity {
         goToBlower();
     }
 
+    // redirect to blower activity
+
     private void goToBlower() {
         BlowButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +53,8 @@ public class GuestUserActivity extends AppCompatActivity {
         });
     }
 
+    // redirect to sign up
+
     private void goToSignup() {
         SignUpGuestButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +64,8 @@ public class GuestUserActivity extends AppCompatActivity {
             }
         });
     }
+
+    // redirect to Login
 
     private void goToLogin() {
 

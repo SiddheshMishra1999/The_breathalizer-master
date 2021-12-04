@@ -45,6 +45,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
 
         ContactModel model = arrayList.get(position);
 
+        // Fetch contact and place them accordingly
         holder.nameTextView.setText(model.getName());
         holder.numberTextView.setText(model.getNumber());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +72,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder>{
     }
 
     @Override
+
+    // get total number of contacts in the list
     public int getItemCount() {
 
 

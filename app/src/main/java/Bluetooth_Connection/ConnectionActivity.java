@@ -52,13 +52,12 @@ public class ConnectionActivity extends AppCompatActivity {
     private int bufferSize = 50000;
 
 
-
+    // Defining the variables used for the bluetooth module
     public static final String DEVICE_EXTRA = "Bluetooth_Connection.SOCKET";
     public static final String DEVICE_UUID = "Bluetooth_Connection.uuid";
     private static final String DEVICE_LIST = "Bluetooth_Connection.devicelist";
     private static final String DEVICE_LIST_SELECTED = "Bluetooth_Connection.devicelistselected";
     public static final String BUFFER_SIZE = "Bluetooth_Connection.buffersize";
-    //    public static final String BUFFER_SIZE = "com.example.anysensormonitoring.buffersize";
     private static final String TAG = "BlueTest5-MainActivity";
 
 
@@ -74,7 +73,7 @@ public class ConnectionActivity extends AppCompatActivity {
         if(getIntent().getBooleanExtra("EXIT", false)){
             finish();
         }
-
+        // Get the list of paired devices
         if (savedInstanceState != null) {
             ArrayList<BluetoothDevice> list = savedInstanceState.getParcelableArrayList(DEVICE_LIST);
             if (list != null) {
@@ -103,7 +102,7 @@ public class ConnectionActivity extends AppCompatActivity {
 
 
     }
-
+    // Redirect to the blower activity
     private void ConnectDevice() {
         ConnectDeviceButton.setOnClickListener(new View.OnClickListener() {
 
@@ -131,6 +130,7 @@ public class ConnectionActivity extends AppCompatActivity {
 
     }
 
+    // Searches for all paired devices
     private void searchDevices() {
         SearchDeviceButton.setOnClickListener(new View.OnClickListener() {
 
@@ -203,11 +203,7 @@ public class ConnectionActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /**
-     * Initialize the List adapter
-     *
-     * @param objects
-     */
+    // Initializing the array
     private void initList(List<BluetoothDevice> objects) {
         final MyAdapter adapter = new MyAdapter(getApplicationContext(), R.layout.list_of_devices, R.id.ListOfContentTextView, objects);
         DevicesListView.setAdapter(adapter);
@@ -221,12 +217,7 @@ public class ConnectionActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Searches for paired devices. Doesn't do a scan! Only devices which are paired through Settings->Bluetooth
-     * will show up with this. I didn't see any need to re-build the wheel over here
-     *
-     * @author ryder
-     */
+    // checks and displays all paired devices
     private class SearchDevices extends AsyncTask<Void, Void, List<BluetoothDevice>> {
 
         @Override
@@ -252,14 +243,7 @@ public class ConnectionActivity extends AppCompatActivity {
         }
 
     }
-
-    /**
-     * Custom adapter to show the current devices in the list. This is a bit of an overkill for this
-     * project, but I figured it would be good learning
-     * Most of the code is lifted from somewhere but I can't find the link anymore
-     *
-     * @author ryder
-     */
+    // Custom adapter to show the current devices in the list.
     private class MyAdapter extends ArrayAdapter<BluetoothDevice> {
         private int selectedIndex;
         private Context context;
@@ -341,20 +325,9 @@ public class ConnectionActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.homescreen, menu);
         return true;
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.action_settings:
-//                Intent intent = new Intent(ConnectionActivity.this, BlowerActivity.class);
-//                startActivityForResult(intent, SETTINGS);
-//                break;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
     // Display any string
     public void Display(String s){
         Toast.makeText(ConnectionActivity.this, s, Toast.LENGTH_LONG).show();
